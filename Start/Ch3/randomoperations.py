@@ -12,6 +12,10 @@ with open("../../sample-weather-history.json", "r") as weatherfile:
 month_data = weatherdata[0:30]
 
 # TODO: the shuffle() function will randomly shuffle a list in-place
+pprint.pp(month_data[:3])
+print("----------------------")
+random.shuffle(month_data)
+pprint.pp(month_data[:3])
 
 
 # TODO: use choice() and choices() to get random items, but beware that
